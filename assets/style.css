@@ -29,12 +29,37 @@ body {
   background-color: #000000;
 }
 
-.container {
+.fixed-size {
   box-sizing: border-box;
   width: 100%;
   max-width: 1170px;
   padding: 0 40px;
   margin: 0 auto;
+}
+
+.header {
+  padding: 60px 0 51px;
+  background-color: #0A0C15;
+}
+.header .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header-content .header-content__btn {
+  display: flex;
+  align-items: center;
+}
+.header .header-content .header-content__btn .header-content__btn-caption {
+  margin-right: 22px;
+  font-size: 14px;
+  color: #F2F2F2;
+}
+.header .header-content .header-content__btn .header-content__btn-icon {
+  width: 27px;
+  height: 21px;
+  background-image: url("images/icons/icon-menu.svg");
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

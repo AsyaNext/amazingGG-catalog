@@ -1,2 +1,27 @@
 @import "fonts";
 @import "base";
+
+.header {
+  padding: 60px 0 51px;
+  background-color: #0A0C15;
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .header-content__btn {
+      display: flex;
+      align-items: center;
+      .header-content__btn-caption {
+        margin-right: 22px;
+        font-size: 14px;
+        color: #F2F2F2;
+      }
+      .header-content__btn-icon {
+        width: 27px;
+        height: 21px;
+        background-image: url("images/icons/icon-menu.svg");
+        background-size: cover;
+      }
+    }
+  }
+}
