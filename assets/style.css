@@ -62,4 +62,53 @@ body {
   background-size: cover;
 }
 
+.banner {
+  background-color: #0A0C15;
+}
+.banner .banner-content {
+  display: flex;
+  flex-direction: column;
+}
+.banner .banner-content .banner-content__slider {
+  position: relative;
+  align-self: center;
+}
+.banner .banner-content .banner-content__slider .banner-content__slider-points {
+  position: absolute;
+  top: calc(50% - 37.5px);
+  right: -27px;
+  display: grid;
+  gap: 24px;
+}
+.banner .banner-content .banner-content__slider .banner-content__slider-points .banner-content__slider-points-item {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.banner .banner-content .banner-content__slider .banner-content__slider-points .active-item {
+  background-color: #FFEB9F;
+}
+.banner .banner-content .banner-content__title {
+  position: relative;
+  top: -64px;
+  max-width: 534px;
+  width: 100%;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100%;
+}
+.banner .banner-content .banner-content__title span {
+  font-weight: 600;
+  font-size: 64px;
+  color: #FFEB9F;
+}
+.banner .banner-content .banner-content__scroll-icon {
+  margin: 22px auto 38px;
+  width: 26px;
+  height: 14px;
+  background-image: url("images/icons/arrow-bottom.svg");
+  background-size: cover;
+}
+
 /*# sourceMappingURL=style.css.map */
