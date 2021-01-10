@@ -60,6 +60,23 @@ body {
   height: 21px;
   background-image: url("images/icons/icon-menu.svg");
   background-size: cover;
+  cursor: pointer;
+  -o-transition: all 0.3s ease;
+  -ms-transform: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header .header-content .header-content__btn .header-content__btn-icon:hover {
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+.header .header-content .header-content__btn .header-content__btn-icon:active {
+  position: relative;
+  top: 1px;
 }
 
 .banner {
@@ -89,6 +106,24 @@ body {
   height: 9px;
   border-radius: 50%;
   background-color: #FFFFFF;
+  cursor: pointer;
+  -o-transition: all 0.3s ease;
+  -ms-transform: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.banner .banner-content .banner-content__slider .banner-content__slider-points .banner-content__slider-points-item:hover {
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  background-color: #FFEB9F;
+}
+.banner .banner-content .banner-content__slider .banner-content__slider-points .banner-content__slider-points-item:active {
+  position: relative;
+  top: 1px;
 }
 .banner .banner-content .banner-content__slider .banner-content__slider-points .active-item {
   background-color: #FFEB9F;
@@ -113,6 +148,8 @@ body {
   height: 14px;
   background-image: url("images/icons/arrow-bottom.svg");
   background-size: cover;
+  cursor: pointer;
+  animation: pulse-scroll 1s ease alternate infinite;
 }
 
 .catalog {
@@ -180,11 +217,30 @@ body {
   font-weight: 600;
   font-size: 18px;
   color: #FFEB9F;
+  cursor: pointer;
+  -o-transition: all 0.3s ease;
+  -ms-transform: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.catalog .catalog-product .catalog-product__description .catalog-product__description-itog .catalog-product__description-itog-btn:hover {
+  background-color: #FFEB9F;
+  color: black;
+}
+.catalog .catalog-product .catalog-product__description .catalog-product__description-itog .catalog-product__description-itog-btn:active {
+  position: relative;
+  top: 1px;
 }
 .catalog .catalog-product .catalog-product__image {
   width: 50%;
 }
 
+@keyframes pulse-scroll {
+  100% {
+    transform: translateY(20px);
+  }
+}
 @media (max-width: 930px) {
   .catalog .catalog-product {
     margin-bottom: 40px;

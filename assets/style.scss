@@ -21,6 +21,15 @@
         height: 21px;
         background-image: url("images/icons/icon-menu.svg");
         background-size: cover;
+        cursor: pointer;
+        @include transition(all 0.3s ease);
+        &:hover {
+          @include transform(scale(1.2));
+        }
+        &:active {
+          position: relative;
+          top: 1px;
+        }
       }
     }
   }
@@ -49,6 +58,16 @@
           height: 9px;
           border-radius: 50%;
           background-color: #FFFFFF;
+          cursor: pointer;
+          @include transition(all 0.3s ease);
+          &:hover {
+            @include transform(scale(1.2));
+            background-color: #FFEB9F;
+          }
+          &:active {
+            position: relative;
+            top: 1px;
+          }
         }
         .active-item {
           background-color: #FFEB9F;
@@ -75,6 +94,8 @@
       height: 14px;
       background-image: url("images/icons/arrow-bottom.svg");
       background-size: cover;
+      cursor: pointer;
+      animation: pulse-scroll 1s ease alternate infinite;
     }
   }
 }
@@ -140,12 +161,30 @@
           font-weight: 600;
           font-size: 18px;
           color: #FFEB9F;
+          cursor: pointer;
+          @include transition(all 0.3s ease);
+          &:hover {
+            background-color: #FFEB9F;
+            color: black;
+          }
+          &:active {
+            position: relative;
+            top: 1px;
+          }
         }
       }
     }
     .catalog-product__image {
       width: 50%;
     }
+  }
+}
+
+@keyframes pulse-scroll {
+  0% {
+  }
+  100% {
+    transform: translateY(20px);
   }
 }
 
