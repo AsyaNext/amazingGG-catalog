@@ -212,6 +212,9 @@ body {
   font-weight: 600;
   font-size: 64px;
 }
+.catalog .catalog-product .catalog-product__description .catalog-product__description-itog .catalog-product__description-itog-cost span {
+  font-size: 48px;
+}
 .catalog .catalog-product .catalog-product__description .catalog-product__description-itog .catalog-product__description-itog-btn {
   padding: 13px 46px;
   border: 1.15px solid #FFEB9F;
