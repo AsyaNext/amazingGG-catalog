@@ -195,12 +195,12 @@ body {
   line-height: 100%;
 }
 .catalog .catalog-product .catalog-product__description .catalog-product__description-subtitle {
-  margin-bottom: 7px;
+  margin-bottom: 34px;
   font-size: 36px;
   line-height: 100%;
 }
 .catalog .catalog-product .catalog-product__description .catalog-product__description-section {
-  margin-top: 27px;
+  margin-bottom: 27px;
 }
 .catalog .catalog-product .catalog-product__description .catalog-product__description-section .catalog-product__description-section-title {
   font-weight: 600;
@@ -213,7 +213,7 @@ body {
   width: 100%;
 }
 .catalog .catalog-product .catalog-product__description .catalog-product__description-itog {
-  margin-top: 64px;
+  margin-top: 37px;
   display: flex;
   align-items: center;
 }
